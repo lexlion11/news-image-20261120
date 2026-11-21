@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body {
+    background: #faf7f1;
+    color: #141312;
+    font-family: 'DejaVu Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { width: 1024px; height: 1024px; display: flex; flex-direction: column; padding: 26px 28px 18px 28px; }
+
+  /* Masthead */
+  .masthead { text-align: center; border-bottom: 4px double #141312; padding-bottom: 12px; }
+  .masthead .title {
+    font-family: 'DejaVu Serif', Georgia, serif;
+    font-weight: 700; font-size: 58px; letter-spacing: 2px; line-height: 1.05;
+  }
+  .masthead .date {
+    font-family: 'DejaVu Serif', Georgia, serif;
+    font-weight: 700; font-size: 52px; letter-spacing: 1px; color: #b3211f;
+    margin-top: 6px; line-height: 1.05;
+  }
+  .masthead .sub {
+    font-size: 17px; letter-spacing: 4px; text-transform: uppercase; color: #3a3833; margin-top: 6px;
+  }
+
+  /* Story grid */
+  .grid { flex: 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, 1fr); gap: 0; }
+  .story {
+    display: flex; align-items: center; gap: 14px;
+    padding: 13px 10px;
+    border-bottom: 1px solid #d8d3c8;
+  }
+  .story:nth-child(2n) { border-left: 1px solid #d8d3c8; }
+  .story:nth-last-child(-n+2) { border-bottom: none; }
+  .story .emoji {
+    font-family: 'Noto Color Emoji', sans-serif;
+    font-size: 62px; line-height: 1; flex: 0 0 78px; text-align: center;
+  }
+  .story .body { flex: 1; min-width: 0; }
+  .story .kicker {
+    font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+    color: #b3211f; margin-bottom: 3px;
+  }
+  .story h2 {
+    font-family: 'DejaVu Serif', Georgia, serif;
+    font-weight: 700; font-size: 27px; line-height: 1.14; letter-spacing: 0.2px;
+  }
+  .story .desc { font-size: 17px; line-height: 1.25; color: #4a473f; margin-top: 4px; }
+
+  /* Footer */
+  .footer {
+    border-top: 3px solid #141312; margin-top: 6px; padding-top: 7px;
+    display: flex; justify-content: space-between;
+    font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: #3a3833;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <div class="title">THE WORLD DAILY</div>
+    <div class="date">FRIDAY, 20 NOVEMBER 2026</div>
+    <div class="sub">The day in world news &middot; Evening Edition</div>
+  </div>
+
+  <div class="grid">
+
+    <div class="story">
+      <div class="emoji">&#x1F91D;</div>
+      <div class="body">
+        <div class="kicker">World Politics &middot; Shenzhen</div>
+        <h2>Trump, Xi and Putin hold first-ever three-way summit</h2>
+        <div class="desc">APEC sideshow turned headline: the three powers issue a joint &ldquo;peace declaration&rdquo;</div>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="emoji">&#x2696;&#xFE0F;</div>
+      <div class="body">
+        <div class="kicker">Justice &middot; The Hague</div>
+        <h2>UN court finds Myanmar committed genocide of Rohingya</h2>
+        <div class="desc">First time in 80 years the ICJ rules a state guilty of genocide</div>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="emoji">&#x1F4A5;</div>
+      <div class="body">
+        <div class="kicker">Conflict &middot; Yemen</div>
+        <h2>Saudi strikes on Yemen kill 41 in 24 hours</h2>
+        <div class="desc">Houthis say 78 raids hit Sanaa and the provinces; a Saudi power plant struck back</div>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="emoji">&#x1F4C8;</div>
+      <div class="body">
+        <div class="kicker">Markets &middot; Wall Street</div>
+        <h2>Anthropic&rsquo;s record IPO, then $1 trillion wiped off US stocks</h2>
+        <div class="desc">Largest IPO in history meets a global AI-led market sell-off</div>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="emoji">&#x1F680;</div>
+      <div class="body">
+        <div class="kicker">Science &middot; Deep Space</div>
+        <h2>Voyager 1 becomes first object one light-day from Earth</h2>
+        <div class="desc">After 49 years of flight, NASA&rsquo;s probe passes 25.9 billion km</div>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="emoji">&#x1F3AE;</div>
+      <div class="body">
+        <div class="kicker">Culture &middot; Gaming</div>
+        <h2>GTA VI launches with record $2.3 billion opening</h2>
+        <div class="desc">Biggest entertainment launch ever; critics score 99 on Metacritic</div>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="emoji">&#x1F9F0;</div>
+      <div class="body">
+        <div class="kicker">Diplomacy &middot; Europe</div>
+        <h2>UK and EU agree deeper trade, energy and security ties</h2>
+        <div class="desc">Joint declaration at the Britain&ndash;EU summit in London</div>
+      </div>
+    </div>
+
+    <div class="story">
+      <div class="emoji">&#x1F6A2;</div>
+      <div class="body">
+        <div class="kicker">Middle East &middot; Hormuz</div>
+        <h2>Iran says tanker hit a mine in the Strait of Hormuz</h2>
+        <div class="desc">Revolutionary Guards report the blast as tensions with the US simmer</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <span>Reported 20 November 2026</span>
+    <span>Reuters &middot; BBC &middot; AP &middot; UN &middot; NASA</span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -18,3 +18,5 @@ news-image-20261120 bounty.
 ```sh
 MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
+
+Built with headless Chrome screenshot of an HTML/SVG page — no AI image generation.
